@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Francisco Noriega",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 14.44, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 150, "left": -60, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led2", "top": 246, "left": 61.4, "attrs": { "color": "blue" } }
+  ],
+  "connections": [
+    [ "esp:12", "led1:A", "red", [ "h-14.21", "v48" ] ],
+    [ "esp:14", "led2:A", "blue", [ "h24.19", "v163.2", "h43.16" ] ],
+    [ "led1:C", "esp:GND.1", "black", [ "v19.2", "h35.4", "v-57.6" ] ],
+    [ "led2:C", "esp:GND.1", "black", [ "h-9.2", "v-134.4" ] ]
+  ],
+  "dependencies": {}
+}

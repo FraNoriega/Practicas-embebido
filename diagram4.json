@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Francisco Noriega",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "ledGiro1",
+      "top": 150,
+      "left": -60,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledGiro2",
+      "top": 217.2,
+      "left": 71,
+      "attrs": { "color": "blue" }
+    }
+  ],
+  "connections": [
+    [ "esp:18", "ledGiro1:A", "green", [ "h43.24", "v134.4", "h-179" ] ],
+    [ "ledGiro1:C", "esp:GND.1", "black", [ "h-22.2", "v-38.4" ] ],
+    [ "esp:19", "ledGiro2:A", "blue", [ "h24.04", "v163.2" ] ],
+    [ "ledGiro2:C", "esp:GND.1", "black", [ "h-18.8", "v-105.6" ] ]
+  ],
+  "dependencies": {}
+}
